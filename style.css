@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 25px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1px;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: black;
+}
+.display {
+    grid-column: 1/5;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+.keys {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equals {
+    grid-area: 4 / 4 / 6 / 5;
+}
